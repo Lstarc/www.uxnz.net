@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript 二维码生成库：QRCode</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<script type="text/javascript" src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+
+<script type="text/javascript">
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 100,
+	height : 100
+});
+
+qrcode.makeCode("https://u.wechat.com/MJEdh1Ohnd2GiLOjD_yc0l8");
+
+
+makeCode();
+
+
+</script>
+</body>
+</html>
